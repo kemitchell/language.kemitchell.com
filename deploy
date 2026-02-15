@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+make
+DOMAIN=language.kemitchell.com
+scp ./index.html "$DOMAIN:/var/www/$DOMAIN"
